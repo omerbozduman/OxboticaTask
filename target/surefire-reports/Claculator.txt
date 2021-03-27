@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: Claculator
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 86.507 s <<< FAILURE! - in Claculator
+verify calculator Add #1(Claculator)  Time elapsed: 7.939 s  <<< FAILURE!
+java.lang.AssertionError: expected:<10> but was:<55>
+
+verify calculator Add #2(Claculator)  Time elapsed: 6.33 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<-55>
+
+verify calculator Add #3(Claculator)  Time elapsed: 5.408 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "-5-5"
+
+verify calculator Concatenate #1(Claculator)  Time elapsed: 5.195 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[55]> but was:<[10]>
+
+verify calculator Concatenate #2(Claculator)  Time elapsed: 6.283 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[-55]> but was:<[0]>
+
+verify calculator Concatenate #3(Claculator)  Time elapsed: 5.194 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<-[5-5]> but was:<-[10]>
+
+verify calculator Multiply #4(Claculator)  Time elapsed: 3.226 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "50000000000"
+
